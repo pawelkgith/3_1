@@ -1,16 +1,31 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <form id="countryForm">
-    <input type="text" id="countryInput">
-    <input type="submit" id="submitBtn" value="Sprawdz">
-  </form>
-  <script src="./script.js" />
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="countryForm">
+      <input type="text" id="countryInput" />
+      <button type="submit" id="submitBtn">Sprawdz</button>
+    </form>
+    <div id="statusMessage"></div>
+
+    <table>
+      <thead>
+        <tr>
+          <td>Name</td>
+          <td>Capital</td>
+          <td>Population</td>
+          <td>Region</td>
+          <td>Subregion</td>
+        </tr>
+      </thead>
+      <tbody id="results"></tbody>
+    </table>
+
+    <script src="./script.js"></script>
+  </body>
 </html>
